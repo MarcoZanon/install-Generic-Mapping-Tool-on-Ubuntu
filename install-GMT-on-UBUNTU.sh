@@ -1,20 +1,25 @@
 #!/bin/bash
 #
-#Install Generic Mapping Tool (GMT) on Ubuntu
+#How to install Generic Mapping Tool (GMT) on Ubuntu
 #
-#updated version of https://zanonxyz.wordpress.com/2015/03/23/install-gmt-generic-mapping-tool-on-ubuntu/
+#
+#Updated version of https://zanonxyz.wordpress.com/2015/03/23/install-gmt-generic-mapping-tool-on-ubuntu/
 #
 #Based on http://gmt.soest.hawaii.edu/projects/gmt/wiki/BuildingGMT
 #
 #
-#Tested on Nov 2018 with:
-#Ubuntu 18.04 Bionic
-#GMT 5.4.4 
-
+#Tested on November 2018 with:
+#- Ubuntu 18.04 Bionic
+#- GMT 6.0.0
+#
+#source: https://github.com/MarcoZanon/install-Generic-Mapping-Tool-on-Ubuntu
+#
+ 
 
 #-------------------------------
+#Set variables
 
-#Replace the 'install_dir' path with the location where you want to install GMT
+#	1.	Replace the 'install_dir' path with the location where you want to install GMT
 
 install_dir='/home/marco/Documents/GMT'
 
@@ -22,14 +27,14 @@ gshhg="gshhg-gmt-2.3.7"
 
 dcw="dcw-gmt-1.1.4"
 
-#Coastlines, rivers, political boundaries (GSHHG) 
-#and country polygons (DCW) are downloaded separately from GMT.
+#	2.	Coastlines, rivers, political boundaries (GSHHG) and
+#		country polygons (DCW) are downloaded separately from GMT.
 #
-#Update 'gshhg' and 'dcw' above with the versions you want to download and install.
-#check ftp://ftp.soest.hawaii.edu/dcw/ and ftp://ftp.soest.hawaii.edu/gshhg/
-#to ge the correct file names
-
-#It shouldn`t be needed to change anything below this point.
+#		Update 'gshhg' and 'dcw' above with the versions you want to download and install.
+#		check ftp://ftp.soest.hawaii.edu/dcw/ and ftp://ftp.soest.hawaii.edu/gshhg/ to get
+#		the correct file names
+#
+#	3.	It shouldn`t be needed to change anything below this point.
 #-------------------------------
 
 #create install directory if it doesn´t exist
